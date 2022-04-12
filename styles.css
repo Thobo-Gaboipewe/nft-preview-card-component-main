@@ -4,18 +4,20 @@ body {
     background-color: hsl(217, 54%, 11%);
     display: grid;
     place-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .container {
     background-color: hsl(216, 50%, 16%);
-    width: 16.5rem;
+    width: 16rem;
+    height: 29rem;
     border-radius: 10px;
     color: hsl(0, 11%, 93%);
-    margin: 5% 0 3rem 0;
 }
 
-main {
-    margin-left: 17px;
+.content {
+    margin: 0 12px;
 }
 
 h1 {
@@ -28,20 +30,16 @@ h1:hover {
     color: hsl(178, 100%, 50%);
 }
 
-.container > img {
-    width: 14.5rem;
-    height: 15rem;
-    margin: 16px;
+img {
+    margin: 15px;
+    width: 14rem;
+    height: 14.5rem;
     border-radius: 5px;
 }
 
 p {
     color: hsl(215, 51%, 70%);
     font-size: 80%;
-}
-
-#time {
-    color: hsl(215, 51%, 70%);
 }
 
 .info {
@@ -51,11 +49,26 @@ p {
     justify-content: space-between;
     margin-right: 5%;
     font-size: 80%;
+    padding-bottom: 0.45rem;
+}
+
+.amount {
+    display: inherit;
+}
+
+.time {
+    display: inherit;
 }
 
 #amount {
     font-size: 90%;
     color: hsl(178, 100%, 50%);
+    margin-left: 5px;
+}
+
+#time {
+    color: hsl(215, 51%, 70%);
+    margin-left: 5px;
 }
 
 hr {
@@ -68,11 +81,7 @@ hr {
     flex-direction: row;
     align-items: center;
     font-size: 90%;
-    padding-bottom: 1rem;
-}
-
-.foot > p {
-    margin-left: 5%;
+    height: 3rem;
 }
 
 #avatar {
@@ -91,10 +100,14 @@ hr {
 }
 
 .attribution { 
+    position:absolute;
+    bottom: 0;
     font-size: 11px; 
     text-align: center;
 }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
 
 @media screen and (max-width: 375px)  {
     .container {
